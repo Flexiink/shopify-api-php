@@ -96,7 +96,7 @@ class InventoryItem
     /**
      * @return string
      */
-    public function getSku(): string
+    public function getSku(): ?string
     {
         return $this->sku;
     }
@@ -104,7 +104,7 @@ class InventoryItem
     /**
      * @param string $sku
      */
-    public function setSku(string $sku): void
+    public function setSku(?string $sku): void
     {
         $this->sku = $sku;
     }
@@ -160,7 +160,7 @@ class InventoryItem
     /**
      * @return string
      */
-    public function getCost(): string
+    public function getCost(): ?string
     {
         return $this->cost;
     }
@@ -168,7 +168,7 @@ class InventoryItem
     /**
      * @param string $cost
      */
-    public function setCost(string $cost): void
+    public function setCost(?string $cost): void
     {
         $this->cost = $cost;
     }
